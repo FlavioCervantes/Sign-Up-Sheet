@@ -126,9 +126,16 @@ catch(error){
 }
 
 async function suggestedPassword(){
-    let suggestedPwd = Math.random().toString(36).slice(-8);
+    let password = document.querySelector("#zip").value;
+
+    // suggested password web API
+    let url = `https://csumb.space/api/suggestedPassword.php?length=8=${password}`;
+    let response = await fetch(url);
+    let data = await response.json();
+
     document.querySelector("#suggestedPwd").innerHTML = "Suggested password: " + suggestedPwd;
 }
+
 
 // validate form before submission
 function validateForm(e){
