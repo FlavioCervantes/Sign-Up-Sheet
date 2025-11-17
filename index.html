@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Sign Up Page </title>
+</head>
+
+<body>
+     <link rel="stylesheet" href="css/styles.css">
+
+    <h1> Sign Up </h1>
+  <form id="signupForm" action="welcome.html" >
+
+     First Name:<input type="text" name="fName"><br>
+     Last Name: <input type="text" name="lName"><br>
+     Gender:    
+
+        <br> <input type="radio" name="gender" value="m">Male<br>
+         <input type="radio" name="gender" value="f">Female<br>	
+      Zip Code:  <input type="text" id="zip" name="zip"><br>
+      City:   <span id="city"></span> <br>
+      Latitude:  <span id="latitude"></span> <br>
+      Longitude: <span id="longitude"></span><br><br>
+
+      <!-- State: 
+        <select id="state" name="state">
+            <option value=""> Select One </option>
+            <option value="CA"> California </option>
+            <option value="NY"> New York  </option>
+            <option value="TX"> Texas </option>
+            <option value="FL"> Florida </option>  
+            <option value="IL"> Illinois </option>
+            <option value="PA"> Pennsylvania </option>
+            <option value="OH"> Ohio </option>
+            <option value="MI"> Michigan </option>
+            <option value="NJ"> New Jersey </option>
+            <option value="VA"> Virginia </option>
+
+        </select> -->
+
+              <!-- The state dropdown is dynamically populated by JavaScript in js/script.js -->
+              State: 
+        <select id="state" name="state" >
+        </select>
+
+
+
+       Select a County: <select id="county"></select><br>
+
+
+       Desired Username: 
+       <input type="text" id="username" name="username" ><br><br>
+       <span id="usernameError"></span><br>
+
+
+         Password: <input type="password" id="password" name="password"><br>
+         <span id="suggestedPwd"></span><br><br>
+
+        Type Password Again: <input type="password" id="retypePassword" name="retypePassword"><br>
+        <span id="passwordError"></span> 
+
+         <input type="submit" value="Sign up!">
+    </form>
+
+<footer>
+    <hr>
+    CST 336 Internet Programming. 2025&copy; Flavio Cervantes<br>
+    <strong>Disclaimer:</strong> The information in this webpage is fictitious. 
+    It is used for academic purposes only.
+</footer>
+
+<script  src="js/script.js"></script>
+
+</body>
+</html>
+
+

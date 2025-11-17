@@ -1,0 +1,40 @@
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: gray;
+}
+
+/* Header styling */
+h1 {
+    position: relative;
+    color: rgb(0, 0, 0);               /* white text for contrast */
+    text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+
+    /* keep your Bootstrap padding and add some visual polish */
+    padding: 22px 28px;
+    box-shadow: 0 8px 20px rgba(2,6,23,0.06);
+    margin: 0 0 18px 0;
+    font-weight: 700;
+    letter-spacing: .4px;
+}
+
+/* Light page background to set content apart from white cards */
+body {
+     
+    background: #d8dadc;
+    margin: 0;
+    padding: 24px;
+    justify-content: center;
+
+
+}   
+
+/* Center the main container */
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
